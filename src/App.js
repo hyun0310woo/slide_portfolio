@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import React from "react";
+import Slider from "./components/Slider";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <h1>제목</h1>
       </header>
+      <section className="content">
+        <nav>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </nav>
+        <main>
+          <Slider />
+        </main>
+        <aside>contactBt</aside>
+      </section>
+      <footer>hyun0310woo@gmail.com</footer>
     </div>
+    // <Slider />
   );
 }
 

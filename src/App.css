@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
@@ -35,4 +35,45 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* 여기서부터 시작 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+
+footer {
+  border-top: 1px solid gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.container nav {
+  border-right: 1px solid gray;
+}
+
+.container aside {
+  border-left: 1px solid gray;
+}
+
+nav,
+aside {
+  flex-basis: 150px;
+  flex-shrink: 0;
+}
+
+main {
+  padding: 30px;
 }
