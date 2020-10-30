@@ -23,8 +23,9 @@ function Slider() {
                     </div>
                 )
             })}
-            <button id="goLeft" onClick={goLeft}>left</button>
-            <button id="goRight" onClick={goRight}>right</button>
+            <button  id="goLeft" onClick={goLeft}><p>left</p></button>
+            <button   id="goRight" onClick={goRight}><p>right</p></button>
+            
         </div>
     )
 }
