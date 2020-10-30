@@ -1,23 +1,35 @@
 * {
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 .slide_wrap {
-  position: relative;
-  width: 400px;
-  margin: auto;
-  padding-bottom: 30px;
+  /* position: flex; */
+  /* margin: auto; */
+  /* padding-bottom: 30px; */
+  overflow: hidden;
 }
 .slide_box {
-  width: 100%;
-  margin: auto;
-  overflow-x: hidden;
+  width: 200px;
+  /* height: 200px; */
+  /* margin: auto; */
+  /* overflow-x: hidden; */
+  /* padding: 30px; */
 }
+
+.slide_list {
+  width: 2800px;
+  height: 200px;
+  overflow: hidden;
+  /* padding: 30px; */
+}
+
 .slide_content {
-  display: table;
+  display: flex;
   float: left;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
+  flex-grow: 1;
 }
 
 .slide01 {

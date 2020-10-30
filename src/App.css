@@ -39,10 +39,15 @@
 
 /* 여기서부터 시작 */
 
+* {
+  font-family: "Montserrat sans-serif";
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  height: 500px;
 }
 
 header {
@@ -75,5 +80,9 @@ aside {
 }
 
 main {
-  padding: 30px;
+  /* padding: 30px; */
+  /* display: flex; */
+  /* float: left; */
+  /* flex-grow: 1; */
+  /* overflow: hidden; */
 }
