@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import "./slider.scss"
+import Test from "./Test"
 
 function Slider() {
-    let sliderArr = [1,2,3,4,5];
+    console.log(Test)
+    let sliderArr = [Test,2,3,4,5];
 
     const [x, setX] = useState(0)
 
