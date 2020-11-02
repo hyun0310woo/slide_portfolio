@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import "./slider.scss"
-import Test from "./Test"
 
 function Slider() {
-    console.log(Test)
-    let sliderArr = [Test,2,3,4,5];
+    let sliderArr = [1,2,3,4,5];
 
     const [x, setX] = useState(0)
 
@@ -17,7 +15,7 @@ function Slider() {
     }
 
     return(
-        <div className="slider">
+          <div className="slider">
             {sliderArr.map((item, index) => {
                 return(
                     <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
@@ -28,7 +26,8 @@ function Slider() {
             <button  id="goLeft" onClick={goLeft}><p>left</p></button>
             <button   id="goRight" onClick={goRight}><p>right</p></button>
             
-        </div>
+         </div>
+        
     )
 }
 
